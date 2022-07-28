@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="/public/images/maskable_icon_x192.png">
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then(
+              function (registration) {
+                console.log(
+                  "Worker registration successful",
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log("Worker registration failed", err);
+              }
+            )
+            .catch(function (err) {
+              console.log(err);
+            });
+        });
+      } else {
+        console.log("Service Worker is not supported by browser.");
+      }
+    </script>
+  </body>
+</html>
