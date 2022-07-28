@@ -33,5 +33,23 @@
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
-    "background_color": "#ffffff"
+    "background_color": "#ffffff",
+    "description": "app to test the camera access for future projects",
+    "screenshots": [
+        {
+            "src": "https://abs.twimg.com/responsive-web/client-web/twitter-lite-data-saver-marketing.68059867.png",
+            "sizes": "586x1041",
+            "type": "image/png"
+        },
+        {
+            "src": "https://abs.twimg.com/responsive-web/client-web/twitter-lite-explore-marketing.fd45b027.png",
+            "sizes": "586x1041",
+            "type": "image/png"
+        },
+        {
+            "src": "https://abs.twimg.com/responsive-web/client-web/twitter-lite-timeline-marketing.befcdb47.png",
+            "sizes": "586x1041",
+            "type": "image/png"
+        }
+    ]
 }
